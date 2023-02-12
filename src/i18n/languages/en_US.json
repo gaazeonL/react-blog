@@ -1,0 +1,424 @@
+{
+  "header": {
+    "g2github": "Go to Github!"
+  },
+  "sider": {
+    "divider": "My Blog"
+  },
+  "pages": {
+    "read": {
+      "title": "Read the article",
+      "selectBar": {
+        "placeholder": "Please enter keyword to search",
+        "noSelect": "No search content yet"
+      },
+      "deleteModel": {
+        "title": "Delete prompt",
+        "message": "Are you sure you want to delete this article?"
+      }
+    },
+    "edit": {
+      "title": "Get inspired!",
+      "titleBar": {
+        "placeholder": "Come up with a loud title"
+      },
+      "editor": {
+        "placeholder": "Please enter something...",
+        "MENU_CONF": {
+          "onError": {
+            "message": "Error uploading"
+          }
+        }
+      },
+      "submitBtn": "submit",
+      "resetBtn": "reset"
+    },
+    "aboutMe": {
+      "personal_TS_overview": {
+        "title": "Overview of Personal Technology Stack",
+        "TS_Diagram": {
+          "title": "Technology Stack Chart",
+          "description": "Personal front-end technology stack overview"
+        }
+      },
+      "personal_TS_details": {
+        "title": "Details of personal technology stack",
+        "basicTechnologyDiagram": {
+          "title": "Front-end basic technology",
+          "description": "Overview of front-end basic technology"
+        },
+        "advancedTechnologyDiagram": {
+          "title": "Front-end advanced technology",
+          "description": "Overview of advanced front-end technologies"
+        },
+        "vueTechnologyDiagram": {
+          "title": "vue framework",
+          "description": "Vue framework technology overview"
+        },
+        "reactTechnologyDiagram": {
+          "title": "react framework",
+          "description": "React Framework Technology Overview"
+        }
+      },
+      "projectTS": {
+        "title": "Project technology stack"
+      }
+    },
+    "setting": {
+      "users": {
+        "selectForm": {
+          "items": {
+            "user_id": {
+              "label": "UserID"
+            },
+            "user_name": {
+              "label": "Username"
+            },
+            "role_id": {
+              "label": "Role ID"
+            }
+          },
+          "selectBtn": "Search User"
+        },
+        "table": {
+          "name": "User Information Table",
+          "tableHeadControl": {
+            "createBtn": "Create User",
+            "batchDeletionBtn": "Delete users in batches"
+          },
+          "columns": {
+            "user_name": {
+              "title": "Username"
+            },
+            "avatar_url": {
+              "title": "Avatar Address",
+              "render": {
+                "tips": "There is no picture"
+              }
+            },
+            "role_id": {
+              "title": "Role ID"
+            },
+            "role_name": {
+              "title": "Role Name"
+            },
+            "action": {
+              "title": "Operation",
+              "render": {
+                "edit": "Edit",
+                "delete": "Delete"
+              }
+            }
+          }
+        },
+        "createModelConfig": {
+          "items": {
+            "user_name": {
+              "label": "Username",
+              "placeholder": "Please enter a username",
+              "rules": {
+                "0": {
+                  "message": "Username length is 5 to 10 letters or numbers"
+                }
+              }
+            },
+            "password": {
+              "label": "Password",
+              "placeholder": "Please enter the user password",
+              "rules": {
+                "0": {
+                  "message": "User password length is 6 to 12 characters"
+                }
+              }
+            },
+            "role_id": {
+              "label": "Role ID"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "User created successfully"
+          }
+        },
+        "batchDeletionModelConfig": {
+          "formHeader": "Are you sure you want to delete the selected user?",
+          "onServiceFullfilled": {
+            "message": "User deleted successfully"
+          }
+        },
+        "deleteModelConfig": {
+          "formHeader": "Are you sure you want to delete this user?",
+          "onServiceFullfilled": {
+            "message": "User deleted successfully"
+          }
+        },
+        "editModelConfig": {
+          "items": {
+            "password": {
+              "label": "Password"
+            },
+            "role_id": {
+              "label": "Role ID"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "User edited successfully"
+          }
+        }
+      },
+      "roles": {
+        "selectForm": {
+          "items": {
+            "role_id": {
+              "label": "Role ID"
+            },
+            "role_name": {
+              "label": "role name"
+            },
+            "permission_ids": {
+              "label": "Permission ID"
+            },
+            "permission_keys": {
+              "label": "Permission name"
+            }
+          },
+          "selectBtn": "Search Role"
+        },
+        "table": {
+          "name": "Role Information Table",
+          "tableHeadControl": {
+            "createBtn": "Create Role",
+            "batchDeletionBtn": "Batch delete roles"
+          },
+          "columns": {
+            "role_id": {
+              "title": "Role ID"
+            },
+            "role_name": {
+              "title": "Role Name"
+            },
+            "permissions_id": {
+              "title": "Permission ID"
+            },
+            "permissions_name": {
+              "title": "Permission Name"
+            },
+            "action": {
+              "title": "Operation",
+              "render": {
+                "edit": "Edit",
+                "delete": "Delete"
+              }
+            }
+          }
+        },
+        "createModelConfig": {
+          "items": {
+            "role_name": {
+              "label": "Role Name",
+              "rules": {
+                "0": {
+                  "message": "Please enter a role name"
+                }
+              }
+            },
+            "permission_keys": {
+              "label": "Permission Name"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "Role created successfully"
+          }
+        },
+        "deleteModelConfig": {
+          "formHeader": "Are you sure you want to delete this role?",
+          "onServiceFullfilled": {
+            "message": "Role deleted successfully"
+          }
+        },
+        "editModelConfig": {
+          "items": {
+            "role_name": {
+              "label": "Role Name",
+              "rules": {
+                "0": {
+                  "message": "Please enter a role name"
+                }
+              }
+            },
+            "permission_ids": {
+              "label": "Permission ID"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "Role edited successfully"
+          }
+        }
+      },
+      "permissions": {
+        "selectForm": {
+          "items": {
+            "permission_id": {
+              "label": "Permission ID"
+            },
+            "type": {
+              "label": "Privilege Type"
+            },
+            "key": {
+              "label": "Permission Name"
+            },
+            "icon": {
+              "label": "icon"
+            },
+            "vue_icon": {
+              "label": "Vue icon"
+            },
+            "url": {
+              "label": "Link address"
+            },
+            "label": {
+              "label": "label"
+            },
+            "component": {
+              "label": "Component name"
+            },
+            "parent": {
+              "label": "parent node"
+            }
+          },
+          "selectBtn": "Search Permissions"
+        },
+        "table": {
+          "name": "Permission Information Table",
+          "tableHeadControl": {
+            "createBtn": "Create permission",
+            "batchDeletionBtn": "Batch delete permission"
+          },
+          "columns": {
+            "permission_id": {
+              "title": "Permission ID"
+            },
+            "type": {
+              "title": "Permission Type"
+            },
+            "key": {
+              "title": "Permission Name"
+            },
+            "icon": {
+              "title": "Icon"
+            },
+            "vue_icon": {
+              "title": "Vue icon"
+            },
+            "url": {
+              "title": "Link Address"
+            },
+            "label": {
+              "title": "Label"
+            },
+            "component": {
+              "title": "Component Name"
+            },
+            "parent": {
+              "title": "Parent Node"
+            },
+            "action": {
+              "title": "Operation",
+              "render": {
+                "edit": "Edit",
+                "delete": "Delete"
+              }
+            }
+          }
+        },
+        "createModelConfig": {
+          "items": {
+            "type": {
+              "label": "Privilege Type"
+            },
+            "key": {
+              "label": "Permission Name"
+            },
+            "icon": {
+              "label": "icon"
+            },
+            "vue_icon": {
+              "label": "Vue icon"
+            },
+            "url": {
+              "label": "Link Address"
+            },
+            "label": {
+              "label": "label"
+            },
+            "component": {
+              "label": "Component name"
+            },
+            "parent": {
+              "label": "parent node"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "Permission created successfully"
+          }
+        },
+        "batchDeletionModelConfig": {
+          "formHeader": "Are you sure you want to delete the selected permissions?",
+          "onServiceFullfilled": {
+            "message": "Permission deleted successfully"
+          }
+        },
+        "deleteModelConfig": {
+          "formHeader": "Are you sure you want to delete this permission?",
+          "onServiceFullfilled": {
+            "message": "Permission deleted successfully"
+          }
+        },
+        "editModelConfig": {
+          "items": {
+            "type": {
+              "label": "Privilege Type"
+            },
+            "key": {
+              "label": "Permission Name"
+            },
+            "icon": {
+              "label": "icon"
+            },
+            "vue_icon": {
+              "label": "Vue icon"
+            },
+            "url": {
+              "label": "Link address"
+            },
+            "label": {
+              "label": "label"
+            },
+            "component": {
+              "label": "Component name"
+            },
+            "parent": {
+              "label": "parent node"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "Permission edited successfully"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "article": {
+      "extra": {
+        "edit": "Edit",
+        "delete": "Delete"
+      }
+    },
+    "curdPage": {
+      "tableHeadControl": {
+        "createBtn": "create",
+        "batchDeletionBtn": "batchDeletion"
+      }
+    }
+  }
+}

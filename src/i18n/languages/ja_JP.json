@@ -1,0 +1,424 @@
+{
+  "header": {
+    "g2github": "ギットハブに行く"
+  },
+  "sider": {
+    "divider": "私のブログ"
+  },
+  "pages": {
+    "read": {
+      "title": "記事を読む",
+      "selectBar": {
+        "placeholder": "キーワードを入力して検索してください",
+        "noSelect": "まだ検索コンテンツがありません"
+      },
+      "deleteModel": {
+        "title": "プロンプトを削除",
+        "message": "この記事を削除してもよろしいですか？"
+      }
+    },
+    "edit": {
+      "title": "インスピレーションを得ます！",
+      "titleBar": {
+        "placeholder": "派手なタイトルを思いつく"
+      },
+      "editor": {
+        "placeholder": "何か入力してください...",
+        "MENU_CONF": {
+          "onError": {
+            "message": "アップロード中にエラーが発生しました"
+          }
+        }
+      },
+      "submitBtn": "参加する",
+      "resetBtn": "リセット"
+    },
+    "aboutMe": {
+      "personal_TS_overview": {
+        "title": "パーソナル テクノロジー スタックの概要",
+        "TS_Diagram": {
+          "title": "テクノロジースタックチャート",
+          "description": "パーソナル フロントエンド テクノロジー スタックの概要"
+        }
+      },
+      "personal_TS_details": {
+        "title": "個人の技術スタックの詳細",
+        "basicTechnologyDiagram": {
+          "title": "フロントエンド基盤技術",
+          "description": "フロントエンド基盤技術の概要"
+        },
+        "advancedTechnologyDiagram": {
+          "title": "フロントエンドの先端技術",
+          "description": "高度なフロントエンド技術の概要"
+        },
+        "vueTechnologyDiagram": {
+          "title": "vue フレームワーク",
+          "description": "Vue フレームワーク技術の概要"
+        },
+        "reactTechnologyDiagram": {
+          "title": "react フレームワーク",
+          "description": "React フレームワーク技術の概要"
+        }
+      },
+      "projectTS": {
+        "title": "プロジェクト技術スタック"
+      }
+    },
+    "setting": {
+      "users": {
+        "selectForm": {
+          "items": {
+            "user_id": {
+              "label": "ユーザーID"
+            },
+            "user_name": {
+              "label": "ユーザー名"
+            },
+            "role_id": {
+              "label": "ロールID"
+            }
+          },
+          "selectBtn": "ユーザーを検索"
+        },
+        "table": {
+          "name": "ユーザー情報テーブル",
+          "tableHeadControl": {
+            "createBtn": "ユーザーを作成",
+            "batchDeletionBtn": "ユーザーを一括で削除する"
+          },
+          "columns": {
+            "user_name": {
+              "title": "ユーザー名"
+            },
+            "avatar_url": {
+              "title": "アバターアドレス",
+              "render": {
+                "tips": "画像はありません"
+              }
+            },
+            "role_id": {
+              "title": "ロールID"
+            },
+            "role_name": {
+              "title": "役割名"
+            },
+            "action": {
+              "title": "手術",
+              "render": {
+                "edit": "編集",
+                "delete": "消去"
+              }
+            }
+          }
+        },
+        "createModelConfig": {
+          "items": {
+            "user_name": {
+              "label": "ユーザー名",
+              "placeholder": "ユーザー名を入力して下さい",
+              "rules": {
+                "0": {
+                  "message": "ユーザー名の長さは 5 ～ 10 文字または数字です"
+                }
+              }
+            },
+            "password": {
+              "label": "パスワード",
+              "placeholder": "ユーザーパスワードを入力してください",
+              "rules": {
+                "0": {
+                  "message": "ユーザーパスワードの長さは 6 ～ 12 文字です"
+                }
+              }
+            },
+            "role_id": {
+              "label": "ロールID"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "ユーザーが正常に作成されました"
+          }
+        },
+        "batchDeletionModelConfig": {
+          "formHeader": "選択したユーザーを削除しますか?",
+          "onServiceFullfilled": {
+            "message": "ユーザーが正常に削除されました"
+          }
+        },
+        "deleteModelConfig": {
+          "formHeader": "本当にこのユーザーを削除しますか?",
+          "onServiceFullfilled": {
+            "message": "ユーザーが正常に削除されました"
+          }
+        },
+        "editModelConfig": {
+          "items": {
+            "password": {
+              "label": "パスワード"
+            },
+            "role_id": {
+              "label": "ロールID"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "User edited successfully"
+          }
+        }
+      },
+      "roles": {
+        "selectForm": {
+          "items": {
+            "role_id": {
+              "label": "ロールID"
+            },
+            "role_name": {
+              "label": "ロール名"
+            },
+            "permission_ids": {
+              "label": "権限 ID"
+            },
+            "permission_keys": {
+              "label": "権限名"
+            }
+          },
+          "selectBtn": "役割を検索"
+        },
+        "table": {
+          "name": "ロール情報テーブル",
+          "tableHeadControl": {
+            "createBtn": "ロールの作成",
+            "batchDeletionBtn": "ロールの一括削除"
+          },
+          "columns": {
+            "role_id": {
+              "title": "ロールID"
+            },
+            "role_name": {
+              "title": "ロール名"
+            },
+            "permissions_id": {
+              "title": "権限 ID"
+            },
+            "permissions_name": {
+              "title": "権限名"
+            },
+            "action": {
+              "title": "手術",
+              "render": {
+                "edit": "編集",
+                "delete": "消去"
+              }
+            }
+          }
+        },
+        "createModelConfig": {
+          "items": {
+            "role_name": {
+              "label": "ロール名",
+              "rules": {
+                "0": {
+                  "message": "ロール名を入力してください"
+                }
+              }
+            },
+            "permission_keys": {
+              "label": "権限名"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "ロールが正常に作成されました"
+          }
+        },
+        "deleteModelConfig": {
+          "formHeader": "このロールを削除してもよろしいですか?",
+          "onServiceFullfilled": {
+            "message": "役割が正常に削除されました"
+          }
+        },
+        "editModelConfig": {
+          "items": {
+            "role_name": {
+              "label": "役割名",
+              "rules": {
+                "0": {
+                  "message": "ロール名を入力してください"
+                }
+              }
+            },
+            "permission_ids": {
+              "label": "権限 ID"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "ロールが正常に編集されました"
+          }
+        }
+      },
+      "permissions": {
+        "selectForm": {
+          "items": {
+            "permission_id": {
+              "label": "権限ID"
+            },
+            "type": {
+              "label": "特権タイプ"
+            },
+            "key": {
+              "label": "パーミッション名"
+            },
+            "icon": {
+              "label": "アイコン"
+            },
+            "vue_icon": {
+              "label": "Vue アイコン"
+            },
+            "url": {
+              "label": "リンクアドレス"
+            },
+            "label": {
+              "label": "ラベル"
+            },
+            "component": {
+              "label": "コンポーネント名"
+            },
+            "parent": {
+              "label": "親ノード"
+            }
+          },
+          "selectBtn": "検索権限"
+        },
+        "table": {
+          "name": "権限情報テーブル",
+          "tableHeadControl": {
+            "createBtn": "作成権限",
+            "batchDeletionBtn": "一括削除権限"
+          },
+          "columns": {
+            "permission_id": {
+              "title": "権限ID"
+            },
+            "type": {
+              "title": "特権タイプ"
+            },
+            "key": {
+              "title": "パーミッション名"
+            },
+            "icon": {
+              "title": "アイコン"
+            },
+            "vue_icon": {
+              "title": "Vue アイコン"
+            },
+            "url": {
+              "title": "リンクアドレス"
+            },
+            "label": {
+              "title": "ラベル"
+            },
+            "component": {
+              "title": "コンポーネント名"
+            },
+            "parent": {
+              "title": "親ノード"
+            },
+            "action": {
+              "title": "操作",
+              "render": {
+                "edit": "編集",
+                "delete": "削除"
+              }
+            }
+          }
+        },
+        "createModelConfig": {
+          "items": {
+            "type": {
+              "label": "特権タイプ"
+            },
+            "key": {
+              "label": "パーミッション名"
+            },
+            "icon": {
+              "label": "アイコン"
+            },
+            "vue_icon": {
+              "label": "Vue アイコン"
+            },
+            "url": {
+              "label": "リンクアドレス"
+            },
+            "label": {
+              "label": "ラベル"
+            },
+            "component": {
+              "label": "コンポーネント名"
+            },
+            "parent": {
+              "label": "親ノード"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "パーミッションが正常に作成されました"
+          }
+        },
+        "batchDeletionModelConfig": {
+          "formHeader": "選択した権限を削除してもよろしいですか?",
+          "onServiceFullfilled": {
+            "message": "パーミッションは正常に削除されました"
+          }
+        },
+        "deleteModelConfig": {
+          "formHeader": "この権限を削除してもよろしいですか?",
+          "onServiceFullfilled": {
+            "message": "パーミッションは正常に削除されました"
+          }
+        },
+        "editModelConfig": {
+          "items": {
+            "type": {
+              "label": "特権タイプ"
+            },
+            "key": {
+              "label": "パーミッション名"
+            },
+            "icon": {
+              "label": "アイコン"
+            },
+            "vue_icon": {
+              "label": "Vue アイコン"
+            },
+            "url": {
+              "label": "リンクアドレス"
+            },
+            "label": {
+              "label": "ラベル"
+            },
+            "component": {
+              "label": "コンポーネント名"
+            },
+            "parent": {
+              "label": "親ノード"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "パーミッションは正常に編集されました"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "article": {
+      "extra": {
+        "edit": "編集",
+        "delete": "消去"
+      }
+    },
+    "curdPage": {
+      "tableHeadControl": {
+        "createBtn": "追加",
+        "batchDeletionBtn": "一括削除"
+      }
+    }
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "header": {
+    "g2github": "轉到Github!"
+  },
+  "sider": {
+    "divider": "個人博客"
+  },
+  "pages": {
+    "read": {
+      "title": "閱讀文章",
+      "selectBar": {
+        "placeholder": "請輸入搜索關鍵字",
+        "noSelect": "暫無搜索內容"
+      },
+      "deleteModel": {
+        "title": "刪除提示",
+        "message": "確定要刪除該文章嗎？"
+      }
+    },
+    "edit": {
+      "title": "迸發出靈感吧!",
+      "titleBar": {
+        "placeholder": "起一個響亮的標題吧"
+      },
+      "editor": {
+        "placeholder": "請輸入內容...",
+        "MENU_CONF": {
+          "onError": {
+            "message": "上傳出錯"
+          }
+        }
+      },
+      "submitBtn": "提交",
+      "resetBtn": "重置"
+    },
+    "aboutMe": {
+      "personal_TS_overview": {
+        "title": "個人技術棧總覽",
+        "TS_Diagram": {
+          "title": "技術棧圖錶",
+          "description": "個人的前端技術棧總覽"
+        }
+      },
+      "personal_TS_details": {
+        "title": "個人技術棧詳情",
+        "basicTechnologyDiagram": {
+          "title": "前端基礎技術",
+          "description": "前端基礎技術總覽"
+        },
+        "advancedTechnologyDiagram": {
+          "title": "前端進階技術",
+          "description": "前端進階技術總覽"
+        },
+        "vueTechnologyDiagram": {
+          "title": "vue框架",
+          "description": "vue框架技術總覽"
+        },
+        "reactTechnologyDiagram": {
+          "title": "react框架",
+          "description": "react框架技術總覽"
+        }
+      },
+      "projectTS": {
+        "title": "項目技術棧"
+      }
+    },
+    "setting": {
+      "users": {
+        "selectForm": {
+          "items": {
+            "user_id": {
+              "label": "用戶ID"
+            },
+            "user_name": {
+              "label": "用戶名"
+            },
+            "role_id": {
+              "label": "角色ID"
+            }
+          },
+          "selectBtn": "搜索用戶"
+        },
+        "table": {
+          "name": "用戶信息錶",
+          "tableHeadControl": {
+            "createBtn": "創建用戶",
+            "batchDeletionBtn": "批量刪除用戶"
+          },
+          "columns": {
+            "user_name": {
+              "title": "用戶名"
+            },
+            "avatar_url": {
+              "title": "頭像地址",
+              "render": {
+                "tips": "沒有圖片哦"
+              }
+            },
+            "role_id": {
+              "title": "角色ID"
+            },
+            "role_name": {
+              "title": "角色名稱"
+            },
+            "action": {
+              "title": "操作",
+              "render": {
+                "edit": "編輯",
+                "delete": "刪除"
+              }
+            }
+          }
+        },
+        "createModelConfig": {
+          "items": {
+            "user_name": {
+              "label": "用戶名",
+              "placeholder": "請輸入用戶名",
+              "rules": {
+                "0": {
+                  "message": "用戶名長度為5到10位的字母或數字"
+                }
+              }
+            },
+            "password": {
+              "label": "密碼",
+              "placeholder": "請輸入用戶密碼",
+              "rules": {
+                "0": {
+                  "message": "用戶密碼長度為6到12位"
+                }
+              }
+            },
+            "role_id": {
+              "label": "角色ID"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "用戶創建成功"
+          }
+        },
+        "batchDeletionModelConfig": {
+          "formHeader": "確定要刪除選中的用戶嗎？",
+          "onServiceFullfilled": {
+            "message": "用戶刪除成功"
+          }
+        },
+        "deleteModelConfig": {
+          "formHeader": "確定要刪除該用戶嗎？",
+          "onServiceFullfilled": {
+            "message": "用戶刪除成功"
+          }
+        },
+        "editModelConfig": {
+          "items": {
+            "password": {
+              "label": "密碼"
+            },
+            "role_id": {
+              "label": "角色ID"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "用戶編輯成功"
+          }
+        }
+      },
+      "roles": {
+        "selectForm": {
+          "items": {
+            "role_id": {
+              "label": "角色ID"
+            },
+            "role_name": {
+              "label": "角色名稱"
+            },
+            "permission_ids": {
+              "label": "權限ID"
+            },
+            "permission_keys": {
+              "label": "權限名稱"
+            }
+          },
+          "selectBtn": "搜索角色"
+        },
+        "table": {
+          "name": "角色信息錶",
+          "tableHeadControl": {
+            "createBtn": "創建角色",
+            "batchDeletionBtn": "批量刪除角色"
+          },
+          "columns": {
+            "role_id": {
+              "title": "角色ID"
+            },
+            "role_name": {
+              "title": "角色名稱"
+            },
+            "permissions_id": {
+              "title": "權限ID"
+            },
+            "permissions_name": {
+              "title": "權限名稱"
+            },
+            "action": {
+              "title": "操作",
+              "render": {
+                "edit": "編輯",
+                "delete": "刪除"
+              }
+            }
+          }
+        },
+        "createModelConfig": {
+          "items": {
+            "role_name": {
+              "label": "角色名稱",
+              "rules": {
+                "0": {
+                  "message": "請輸入角色名稱"
+                }
+              }
+            },
+            "permission_keys": {
+              "label": "權限名稱"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "角色創建成功"
+          }
+        },
+        "deleteModelConfig": {
+          "formHeader": "確定要刪除該角色嗎？",
+          "onServiceFullfilled": {
+            "message": "角色刪除成功"
+          }
+        },
+        "editModelConfig": {
+          "items": {
+            "role_name": {
+              "label": "角色名稱",
+              "rules": {
+                "0": {
+                  "message": "請輸入角色名稱"
+                }
+              }
+            },
+            "permission_ids": {
+              "label": "權限ID"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "角色編輯成功"
+          }
+        }
+      },
+      "permissions": {
+        "selectForm": {
+          "items": {
+            "permission_id": {
+              "label": "權限ID"
+            },
+            "type": {
+              "label": "權限類型"
+            },
+            "key": {
+              "label": "權限名稱"
+            },
+            "icon": {
+              "label": "圖標"
+            },
+            "vue_icon": {
+              "label": "Vue圖標"
+            },
+            "url": {
+              "label": "鏈接地址"
+            },
+            "label": {
+              "label": "標簽"
+            },
+            "component": {
+              "label": "組件名稱"
+            },
+            "parent": {
+              "label": "父節點"
+            }
+          },
+          "selectBtn": "搜索權限"
+        },
+        "table": {
+          "name": "權限信息錶",
+          "tableHeadControl": {
+            "createBtn": "創建權限",
+            "batchDeletionBtn": "批量刪除權限"
+          },
+          "columns": {
+            "permission_id": {
+              "title": "權限ID"
+            },
+            "type": {
+              "title": "權限類型"
+            },
+            "key": {
+              "title": "權限名稱"
+            },
+            "icon": {
+              "title": "圖標"
+            },
+            "vue_icon": {
+              "title": "Vue圖標"
+            },
+            "url": {
+              "title": "鏈接地址"
+            },
+            "label": {
+              "title": "標簽"
+            },
+            "component": {
+              "title": "組件名稱"
+            },
+            "parent": {
+              "title": "父節點"
+            },
+            "action": {
+              "title": "操作",
+              "render": {
+                "edit": "編輯",
+                "delete": "刪除"
+              }
+            }
+          }
+        },
+        "createModelConfig": {
+          "items": {
+            "type": {
+              "label": "權限類型"
+            },
+            "key": {
+              "label": "權限名稱"
+            },
+            "icon": {
+              "label": "圖標"
+            },
+            "vue_icon": {
+              "label": "Vue圖標"
+            },
+            "url": {
+              "label": "鏈接地址"
+            },
+            "label": {
+              "label": "標簽"
+            },
+            "component": {
+              "label": "組件名稱"
+            },
+            "parent": {
+              "label": "父節點"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "權限創建成功"
+          }
+        },
+        "batchDeletionModelConfig": {
+          "formHeader": "確定要刪除選中的權限嗎？",
+          "onServiceFullfilled": {
+            "message": "權限刪除成功"
+          }
+        },
+        "deleteModelConfig": {
+          "formHeader": "確定要刪除該權限嗎？",
+          "onServiceFullfilled": {
+            "message": "權限刪除成功"
+          }
+        },
+        "editModelConfig": {
+          "items": {
+            "type": {
+              "label": "權限類型"
+            },
+            "key": {
+              "label": "權限名稱"
+            },
+            "icon": {
+              "label": "圖標"
+            },
+            "vue_icon": {
+              "label": "Vue圖標"
+            },
+            "url": {
+              "label": "鏈接地址"
+            },
+            "label": {
+              "label": "標簽"
+            },
+            "component": {
+              "label": "組件名稱"
+            },
+            "parent": {
+              "label": "父節點"
+            }
+          },
+          "onServiceFullfilled": {
+            "message": "權限編輯成功"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "article": {
+      "extra": {
+        "edit": "編輯",
+        "delete": "刪除"
+      }
+    },
+    "curdPage": {
+      "tableHeadControl": {
+        "createBtn": "添加",
+        "batchDeletionBtn": "批量刪除"
+      }
+    }
+  }
+}
